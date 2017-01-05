@@ -2,7 +2,6 @@
 var SearchPet = require('./../js/pet.js').searchpetModule;
 var animals = require('./../js/breedlist.js').animals;
 
-
 $(document).ready(function() {
   searchpet = new SearchPet();
   animals.forEach(function(animal) {
@@ -17,9 +16,12 @@ $(document).ready(function() {
     var animal = $('select#animal').val();
     var tom = $('input#tom').val();
     searchpet.pets(zipcode, animal, tom);
-    $("#header").slideUp(function() {
-      $("#header").fadeOut(1000)
-    } 5000);
+    $("#header").slideUp(2000);
   });
 
+
+  $("h1.back").click(function() {
+    $(".results").toggle();
+    $(".pet").empty();
+  });
 });
