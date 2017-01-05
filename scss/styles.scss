@@ -1,0 +1,50 @@
+.pet-container {
+  h3 {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+  }
+  img {
+    height: 200px;
+    width: auto;
+  }
+
+}
+
+header {
+  h1 {
+    font-size: 18rem;
+    text-align: center;
+  }
+}
+
+#nav-ul {
+  margin: 50px 0;
+  display:flex;
+  justify-content: space-around;
+  li {
+    display: inline-block;
+    padding: 0 15px;
+      width: 200px;
+    input {
+      border: none;
+      border-bottom: 2px solid black;
+    }
+    input:focus {
+      outline: none;
+    }
+    select {
+      background: white;
+      color: black;
+      height: 25px;
+      border-radius: 0px;
+      list-style-type:none;
+      -webkit-appearance:none;
+      padding-left: 10px;
+      border:black solid 1px;
+      outline: none;
+      width: 200px;
+
+    }
+  }
+
+}
