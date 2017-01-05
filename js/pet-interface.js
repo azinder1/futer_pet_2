@@ -11,11 +11,15 @@ $(document).ready(function() {
 
   $('form#pet-form').submit(function(event){
     event.preventDefault();
-      $("div.row.results").empty();
+
+    $("div.row.results").empty();
     var zipcode = $('input#zip').val();
     var animal = $('select#animal').val();
     var tom = $('input#tom').val();
     searchpet.pets(zipcode, animal, tom);
+    $("#header").slideUp(function() {
+      $("#header").fadeOut(1000)
+    } 5000);
   });
 
 });

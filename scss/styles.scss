@@ -9,31 +9,34 @@ body {
   }
   img {
     height: 200px;
-    width: auto;
+    width: 200px;
+    object-fit: cover;
+    display: block;
   }
 
 }
 
 header {
+  height: 90vh;
   h1 {
-    font-size: 35rem;
+    font-size: 25rem;
     text-align: center;
-    transition: 1s;
-
+    transition: 5s;
   }
 }
 
 #nav-ul {
   margin: 50px 0;
-  display:flex;
-  justify-content: space-around;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
   li {
     display: inline-block;
-    padding: 0 15px;
       width: 200px;
     input {
       border: none;
       border-bottom: 2px solid black;
+      width: 200px;
     }
     input:focus {
       outline: none;
@@ -43,26 +46,27 @@ header {
       color: black;
       height: 25px;
       border-radius: 0px;
-      list-style-type:none;
-      -webkit-appearance:none;
-      padding-left: 10px;
-      border:black solid 1px;
+      list-style-type: none;
+      -webkit-appearance: none;
+      padding-left: 27%;
+      border: black solid 1px;
       outline: none;
       width: 200px;
     }
     button {
-      background:none;
+      padding: 0;
+      background: none;
       width: 200px;
-      border:none;
-      transition: 2s;
+      border: 1px solid black;
+      transition-delay: 5s;
+
     }
     button:focus {
-      outline:none;
+      outline: none;
     }
     button:hover {
-      background:black;
-      color:white;
-      transform: rotate(360deg);
+      background: black;
+      color: white;
     }
   }
 }
