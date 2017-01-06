@@ -5,7 +5,7 @@ var animals = require('./../js/breedlist.js').animals;
 $(document).ready(function() {
   searchpet = new SearchPet();
   animals.forEach(function(animal) {
-    $("select#animal").append("<option>" + animal + "</option>");
+    $("select#animal").append("<option class='text-uppercase' value="+ animal + ">" + animal + "</option>");
   });
 
   $('form#pet-form').submit(function(event){
@@ -23,5 +23,7 @@ $(document).ready(function() {
   $("h1.back").click(function() {
     $(".results").toggle();
     $(".pet").empty();
+    $("h1.back").hide();
+    $("#pet-form").show();
   });
 });

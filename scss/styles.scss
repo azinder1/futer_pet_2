@@ -18,10 +18,24 @@ body {
 
 header {
   height: 90vh;
+    > h1 {
+    margin: 0;
+  }
   h1 {
     font-size: 25rem;
     text-align: center;
     transition: 5s;
+  }
+  h6 {
+    margin: 0;
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+    left: 8px;
+    text-align: center;
+    span {
+      padding: 25px;
+    }
   }
 }
 
@@ -48,7 +62,8 @@ header {
       border-radius: 0px;
       list-style-type: none;
       -webkit-appearance: none;
-      padding-left: 27%;
+      // padding-left: 27%;
+      text-align: center;
       border: black solid 1px;
       outline: none;
       width: 200px;
@@ -59,18 +74,28 @@ header {
       width: 200px;
       border: 1px solid black;
       transition-delay: 5s;
-
-    }
-    button:focus {
+      &:focus {
       outline: none;
-    }
-    button:hover {
-      background: black;
-      color: white;
+      }
+      &:hover {
+        background: black;
+        color: white;
+      }
     }
   }
 }
 
 .pet-container:hover {
   cursor: pointer;
+}
+
+#map {
+  height: 800px;
+}
+
+.back {
+  display:none;
+  &:hover {
+    cursor: pointer;
+  }
 }
